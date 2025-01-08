@@ -1,0 +1,54 @@
+============<liberaries>============
+1- react-router-dom
+2- tailwindcss
+3- react-redux
+4- redux-toolkit
+5- react-icons
+6- bootstrap
+7- google-maps
+
+=============<pages>================
+1- Start 
+2- Home 
+3- Redeem => 
+4- Destination 
+5- Questions 
+6- Map 
+
+==============<components>==========
+1- Navbar
+2- RedeemCard
+3- Popup 
+4- DestinationCard 
+5- Choise
+
+==============<slices>=============
+1- points
+2- popup
+3- questions
+
+==============<colors>==============
+--broun: #5A3E36;
+--ceial: #56CCF2;
+--light-yellow: #F2C94C;
+--dark-red: #A64B2A;
+--dark-gray: #6D6D6D;
+--black: #2C2C2C;
+--oval-green: #78866B;
+--light-gold: #D4AF37;
+--light-bage: #F5EFE6;
+--white: #FFFFFF;
+
+==============<typegraphy>=================
+font-family: Cairo || Playfair || Display
+---------------<sizes>---------------------
+--48p: 48px;
+--36p: 36px;
+--30p: 30px;
+--28p: 28px;
+--22p: 22px;
+--18p: 18px;
+--16p: 16px;
+--12p: 12px;
+
+
