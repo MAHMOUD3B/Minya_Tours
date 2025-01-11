@@ -10,14 +10,14 @@ const Start = () => {
           <img
             src={`${IMGURL}university.jpg`}
             alt="university-logo"
-            className="rounded-full w-[70px] h-[70px] md:w-[90px] md:h-[90px] lg:w-[120px] lg:h-[120px]"
+            className="rounded-full drop-shadow-xl w-[70px] h-[70px] md:w-[90px] md:h-[90px] lg:w-[120px] lg:h-[120px]"
           />
         </span>
         <span>
           <img
             src={`${IMGURL}faculty.png`}
             alt="faculty-logo"
-            className="rounded-full w-[70px] h-[70px] md:w-[90px] md:h-[90px] lg:w-[120px] lg:h-[120px]"
+            className="rounded-full drop-shadow-xl w-[70px] h-[70px] md:w-[90px] md:h-[90px] lg:w-[120px] lg:h-[120px]"
           />
         </span>
       </div>
@@ -26,13 +26,13 @@ const Start = () => {
           Welcome With You In Minya
         </h1>
         <h1 className="text-[24px] md:text-[32px] lg:text-[48px] text-broun">
-          Let's{" "}
+          Let's
           <button
-            onClick={() => navigate("/home")}
+            onClick={() => navigate("home")}
             className="px-3 bg-lightYellow text-[18px] md:text-[25px] lg:text-[30px] rounded-lg border-2 border-broun animate-bounce"
           >
             Start
-          </button>{" "}
+          </button>
           Our Journey
         </h1>
       </div>

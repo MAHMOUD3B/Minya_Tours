@@ -1,4 +1,4 @@
-import "./styles/app.css"
+import "./styles/app.css";
 import { Route, Routes } from "react-router-dom";
 import Start from "./pages/Start";
 import Home from "./pages/Home";
@@ -12,12 +12,19 @@ const App = () => {
     <div className="font-playfair">
       <Routes>
         <Route path={"/"} element={<Start />} />
-        <Route path={"/home"} element={<Home />} />
-        <Route path={"/destination"} element={<Destination />} />
-        <Route path={"/map"} element={<MapPage />} />
-        <Route path={"/questions"} element={<Questions />} />
-        <Route path={"/redeem"} element={<Redeem />} />
+        <Route path={"home"} element={<Home />} />
+        <Route path={"destination"} element={<Destination />} />
+        <Route path={"map"} element={<MapPage />} />
+        <Route path={"destination/questions"} element={<Questions />} />
+        <Route path={"redeem"} element={<Redeem />} />
       </Routes>
+      <audio
+        src="../../public/assets/audios/background_music2.mp3"
+        preload="true"
+        loop
+        id="ground_music"
+        // muted
+      ></audio>
     </div>
   );
 };

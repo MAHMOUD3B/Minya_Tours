@@ -25,15 +25,16 @@ const MapPage = () => {
   const handleTooltip = (index) => {
     switch (index + 1) {
       case 1:
-        return "تونا الجبل";
+        return "Tuna Al-Gabal";
       case 2:
-        return "مقابر بنى حسن";
+        return "Beni Hassan Tombs";
       case 3:
-        return "جبل الطير | مسار العائلة المقدسة";
+        return "Gabal Al-Tayr | The Holy Family Trail";
       case 4:
-        return " البهنسا ";
+        return "Al-Bahnasa";
     }
   };
+
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -58,29 +59,26 @@ const MapPage = () => {
         {currentLocation && (
           <MapContainer
             center={currentLocation}
-            zoom={14} // مستوى التكبير
+            zoom={10} 
             style={{ height: "100%", width: "100%" }}
           >
-            {/* طبقة القمر الصناعي من Esri */}
+           
             <TileLayer
               url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
               attribution='&copy; <a href="https://www.esri.com/en-us/arcgis/about-arcgis">Esri</a>'
             />
 
-            {/* إضافة Polyline (خط السير) */}
             <Polyline positions={polylineCoordinates} color="blue" weight={4} />
 
-            {/* إضافة Markers لكل نقطة في الخط السير */}
             {polylineCoordinates.map((coords, index) => (
               <Marker position={coords} key={index}>
                 <Popup> {handleTooltip(index)}</Popup>
               </Marker>
             ))}
 
-            {/* إضافة Marker للموقع الحالي إذا تم العثور عليه */}
             {currentLocation && (
               <Marker position={currentLocation}>
-                <Popup>موقعك الحالي</Popup>
+                <Popup>Your location</Popup>
               </Marker>
             )}
           </MapContainer>

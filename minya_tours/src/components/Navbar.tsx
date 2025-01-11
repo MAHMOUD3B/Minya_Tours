@@ -6,7 +6,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <nav className="py-2 px-4 lg:py-3 lg:px-5 bg-lightGold fixed z-50 top-0 left-[50%] translate-x-[-50%] rounded-b-lg shadow-lg shadow-broun">
-      <ul className="flex items-center justify-center gap-5 md:gap-7 lg:gap-10">
+      <ul className="flex items-center justify-center gap-4 md:gap-7 lg:gap-10">
         <li onClick={() => navigate("")}>
           <div className="py-1 px-2 rounded-lg shadow-lg bg-white text-[16px] md:text-[20px] lg:text-[22px] shadow-sm border flex items-center justify-between gap-2">
             <span className="text-lightYellow">
