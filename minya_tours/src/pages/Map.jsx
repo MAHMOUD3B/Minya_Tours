@@ -10,9 +10,7 @@ import Navbar from "../components/Navbar";
 import { useEffect, useState } from "react";
 
 const MapPage = () => {
-  const [currentLocation, setCurrentLocation] = useState<
-    [number, number] | null
-  >(null);
+  const [currentLocation, setCurrentLocation] = useState(null);
 
   // places coordinates
   const polylineCoordinates = [
@@ -34,7 +32,6 @@ const MapPage = () => {
         return "Al-Bahnasa";
     }
   };
-
 
   useEffect(() => {
     if (navigator.geolocation) {

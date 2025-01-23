@@ -2,13 +2,13 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./styles/custom-bootstrap.scss";
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import "./index.css";
-import App from "./App.tsx";
+import App from "./App.jsx";
 import { Provider } from "react-redux";
-import Store from "./RTK/store.ts";
-createRoot(document.getElementById("root")!).render(
+import Store from "./RTK/store.js";
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Provider store={Store}>
       <Router>

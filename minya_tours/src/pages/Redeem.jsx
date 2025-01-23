@@ -8,8 +8,9 @@ import { fetchRedeemCards } from "../RTK/Slices/APIs/redeem_cards";
 const Redeem = () => {
   const dispatch = useDispatch();
   const redeemCards = useSelector((state) => state.redeemCards.cards);
-  const popupStatus = useSelector((state) => state.popup);  
+  const popupStatus = useSelector((state) => state.popup.status);
 
+  // fetch redeem cards in redeem page
   useEffect(() => {
     dispatch(fetchRedeemCards());
   }, []);
