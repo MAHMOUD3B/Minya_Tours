@@ -90,12 +90,12 @@ const Questions = () => {
 
       {/* audio files */}
       <audio
-        src="../../public/assets/audios/correct.mp3"
+        src="./assets/audios/correct.mp3"
         id="correctAnsMusic"
         preload="true"
       ></audio>
       <audio
-        src="../../public/assets/audios/wrong.mp3"
+        src="./assets/audios/wrong.mp3"
         id="wrongAnsMusic"
         preload="true"
       ></audio>

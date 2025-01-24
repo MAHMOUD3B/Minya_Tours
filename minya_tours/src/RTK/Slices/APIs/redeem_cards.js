@@ -8,7 +8,7 @@ const initialState = {
 // Define the async thunk
 export const fetchRedeemCards = createAsyncThunk("redeem-cards/fetchRedeemCards", async (_, { rejectWithValue }) => {
     try {
-        const response = await fetch("../../../../public/Data/redeem_cards.json");
+        const response = await fetch("./Data/redeem_cards.json");
         if (!response.ok) {
             throw new Error("Failed to fetch redeem cards");
         }

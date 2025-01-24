@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 const Start = () => {
-  const IMGURL = "../../public/assets/images/identity/";
+  const IMGURL = "./assets/images/identity/";
   const navigate = useNavigate();
 
   return (

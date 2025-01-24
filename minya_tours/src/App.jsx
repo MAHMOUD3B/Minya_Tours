@@ -19,11 +19,10 @@ const App = () => {
         <Route path={"redeem"} element={<Redeem />} />
       </Routes>
       <audio
-        src="../../public/assets/audios/background_music2.mp3"
+        src="./assets/audios/background_music2.mp3"
         preload="true"
         loop
         id="ground_music"
-        // muted
       ></audio>
     </div>
   );

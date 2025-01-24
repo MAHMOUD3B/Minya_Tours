@@ -1,7 +1,7 @@
 
 
 const DestinationCard = ({ info }) => {
-  const IMG_BASE_URL = "../../public/assets/images/";
+  const IMG_BASE_URL = "./assets/images/";
   const { image, title } = info;
 
   return (

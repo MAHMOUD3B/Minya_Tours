@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import { useEffect, useState } from "react";
 
 // constants variables
-const IMGURL = "../../public/assets/images/identity/";
+const IMGURL = "./assets/images/identity/";
 
 const handleDestClick = (event) => {
   const destination = event.target ? event.target.parentElement?.title : "";
@@ -142,7 +142,7 @@ const Home = () => {
         </div>
       </div>
       <audio
-        src="../../public/assets/audios/btn-effect.mp3"
+        src="./assets/audios/btn-effect.mp3"
         id="btn-effect"
         preload="true"
       ></audio>

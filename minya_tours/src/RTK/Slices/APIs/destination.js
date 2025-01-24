@@ -1,14 +1,12 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-// Define the initial state
 const initialState = {
     loading: false,
     destInfo: [],
     url: "",
     error: null,
 };
-// Define the async thunk
 export const fetchDestination = createAsyncThunk("destination/fetchDestination", async (_, { rejectWithValue }) => {
-    const BASE_URL = `../../../../public/Data/information/${sessionStorage.getItem("dest")}.json`;
+    const BASE_URL = `./Data/information/${sessionStorage.getItem("dest")}.json`;
     try {
         const response = await fetch(BASE_URL);
         if (!response.ok) {

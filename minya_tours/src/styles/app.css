@@ -1,5 +1,5 @@
 .home-page {
-  background-image: url("../public/assets/images/identity/landing1.jpg");
+  background-image: url("./images/identity/landing1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -19,7 +19,7 @@
   /* cusomize carousel buttons */
   .carousel-control-next {
     .carousel-control-next-icon {
-      background-image: url("../../public/assets/images/grphics/chevron-right.png");
+      background-image: url("./images/grphics/chevron-right.png");
       height: 50px !important;
 
       @media(max-width: 576px) {
@@ -31,7 +31,7 @@
 
   .carousel-control-prev {
     .carousel-control-prev-icon {
-      background-image: url("../../public/assets/images/grphics/chevron-left.png");
+      background-image: url("./images/grphics/chevron-left.png");
       height: 50px !important;
 
       @media(max-width: 576px) {
